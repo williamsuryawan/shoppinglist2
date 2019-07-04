@@ -3,6 +3,6 @@ const router = express.Router();
 
 // console.log("hello here =====")
 router.get('/')
-router.use('/shopping', require('./shopping'));
+router.use('/study', require('./study'));
 
 module.exports = router;

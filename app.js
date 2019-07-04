@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const mongoose = require ('mongoose');
 
-mongoose.connect(`mongodb+srv://${process.env.name}:${process.env.password}@cluster0-dlbfv.mongodb.net/shoppinglist2?retryWrites=true`, {useNewUrlParser: true})
+mongoose.connect(`mongodb+srv://${process.env.name}:${process.env.password}@cluster0-dlbfv.mongodb.net/studylist2?retryWrites=true`, {useNewUrlParser: true})
 const Router = require('./routes/index.js');
 
 const port = process.env.port || 3000

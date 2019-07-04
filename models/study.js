@@ -1,21 +1,21 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const shoppingSchema = new Schema ({
+const studySchema = new Schema ({
     date: {
         type: Date
     },
     name: {
         type: String
     },
-    price: {
-        type: Number
+    subject: {
+        type: String
     },
     description: {
         type: String
     }
 })
 
-let Shopping = mongoose.model('Shopping', shoppingSchema)
+let Study = mongoose.model('Study', studySchema)
 
-module.exports = Shopping
+module.exports = Study
